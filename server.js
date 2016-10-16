@@ -14,8 +14,9 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/page-one', function (req, res) {
-  res.send('Page One is Requested');
+  res.sendFile(path.join(__dirname, 'ui', 'page-one.html'));
 });
+
 
 app.get('/page-two', function (req, res) {
   res.send('Page two is Requested');
