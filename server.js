@@ -5,6 +5,24 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var pageone={
+    title:'Page One - Vineet Chauhan',
+    heading:'Page One',
+    date:'Sep 5, 2016',
+    content:`<p>
+                Content of first web Page. Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.
+            </p>
+            <p>
+                Content of first web Page. Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.
+            </p>
+            <p>
+                Content of first web Page. Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.
+            </p>
+            <p>
+                Content of first web Page. Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.Content of first web Page.
+            </p>`
+};
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
