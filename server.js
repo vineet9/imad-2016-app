@@ -23,7 +23,7 @@ app.get('/page-two', function (req, res) {
 });
 
 app.get('/page-three', function (req, res) {
-  res.send('Page three is Requested');
+   res.sendFile(path.join(__dirname, 'ui', 'page-three.html'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
